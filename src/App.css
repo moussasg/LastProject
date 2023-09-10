@@ -35,7 +35,7 @@ clip-path: polygon(100% 0 , 0 100% , 100% 100%);
     width: 100vw;
     justify-content: flex-start;
 }
-h1 {
+h1,h2,h3 {
     color: white;
 }
 .Home {
@@ -49,8 +49,21 @@ h1 {
     display: flex;
     width: 50vw;
 }
+/*npm install react-spring*/
+@keyframes move {
+    0% {
+      transform: translate(0, 0); /* Début de l'animation : pas de déplacement */
+    }
+    50% {
+      transform: translate(5px, 5px); /* Milieu de l'animation : déplacement vers la droite et vers le bas */
+    }
+    100% {
+      transform: translate(0, 0); /* Fin de l'animation : retour à la position initiale */
+    }
+  } 
 .monimg {
     position: relative;
+    animation: move 2s infinite alternate; /* Utilisation de l'animation "move" pendant 2 secondes, en boucle */
 }
 
 

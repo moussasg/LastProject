@@ -1,5 +1,6 @@
 import React from "react"
-import fonecran from "./assets/fondecran.png"
+import fond from "./assets/fondecran.png"
+import { useSpring, animated } from 'react-spring';
 import "./App.css"
 import Trpc from "./anim"
 export default function App() {
@@ -22,7 +23,16 @@ export default function App() {
     <h1><Trpc/></h1>
     </div>
     <div className="monimg">
-    <img width="400px" height="350px" src={fonecran}></img>
+    <figure className="hero-banner">
+        <img
+          src={fond}
+          width="400px" 
+          height="350px"
+          loading="lazy"
+          alt="hero-banner"
+          className="w-100 banner-animation"
+        />
+      </figure>
     </div>
     </div>
     </header> 
