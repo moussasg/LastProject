@@ -34,8 +34,15 @@ clip-path: polygon(100% 0 , 0 100% , 100% 100%);
     gap: 50px;
     width: 100vw;
     justify-content: flex-start;
+    align-items: center;
 }
-h1,h2,h3 {
+.nav h3 {
+    color: white;
+}
+ h1 {
+    color: white; 
+}
+.logo h2 {
     color: white;
 }
 .Home {
@@ -47,15 +54,33 @@ h1,h2,h3 {
 .prensentation {
     position: relative;
     display: flex;
+    flex-direction: column;
+    gap: 50px;
     width: 50vw;
 }
+.subtitle {
+   color: #FFD700;
+  }
+.btn2 {
+    background-image: var(--gradient-2);
+    color: var(--white);
+    padding: 12px 35px;
+    font-size: var(--fs-8);
+    font-weight: var(--fw-500);
+    border-radius: 0 25px;
+    transition: var(--transition-2);
+    background: linear-gradient(45deg,#8614ce,#4000ff);
+  }
+  .btn2  {
+    color: white;
+  }
 /*npm install react-spring*/
 @keyframes move {
     0% {
       transform: translate(0, 0); /* Début de l'animation : pas de déplacement */
     }
     50% {
-      transform: translate(5px, 5px); /* Milieu de l'animation : déplacement vers la droite et vers le bas */
+      transform: translate(10px, 10px); /* Milieu de l'animation : déplacement vers la droite et vers le bas */
     }
     100% {
       transform: translate(0, 0); /* Fin de l'animation : retour à la position initiale */

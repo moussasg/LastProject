@@ -1,0 +1,70 @@
+.About {
+    display: flex;
+    width: 100vw;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+@keyframes move {
+    0% {
+      transform: translate(0, 0); /* Début de l'animation : pas de déplacement */
+    }
+    50% {
+      transform: translate(10px, 10px); /* Milieu de l'animation : déplacement vers la droite et vers le bas */
+    }
+    100% {
+      transform: translate(0, 0); /* Fin de l'animation : retour à la position initiale */
+    }
+  } 
+.logoabout {
+    display: flex;
+    position: relative;
+    animation: move 2s infinite alternate; /* Utilisation de l'animation "move" pendant 2 secondes, en boucle */
+}
+.skills {
+    width: 100%;
+    display: flex;
+    align-items: center
+
+}
+    .logoabout:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+        height: 30vh;
+      }
+.textabout {
+    display: flex;
+    width: 40vw;
+    height: 100vh;
+}
+.textabout h1 {
+    color: indigo;
+}
+h2 {
+    color: indigo;
+  
+}
+.treebutton {
+        display: flex;
+        width: 80%;
+        height: 30vh;
+        padding: 1rem;
+        border: 1px solid #e0e0e0;
+        border-radius: 0.5rem;
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.1);
+        transition: all 0.2s ease-in-out;
+      }
+      .treebutton:hover {
+        transform: scale(1.05);
+        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
+      }
+.staistique {
+    display: flex;
+    color: indigo;
+    flex-direction: column;
+    height: auto;
+    text-align: center;
+    border: 2px solid #000; /* Bordure solide de 2 pixels en noir */
+    padding: 15px;
+    box-shadow: var(--shadow);
+    border-radius: var(--radius-12);
+}
