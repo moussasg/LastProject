@@ -3,17 +3,65 @@
     width: 100vw;
     flex-direction: column;
 }
+.widthstrat {
+  width: 200px;
+}
+.imgstrat {
+  width: 100px;
+}
 .title {
     display: flex;
     width: 100vw;
     justify-content: center;
 }
+.allimg {
+  width: 200px;
+}
 .treecard {
     display: flex;
     width: 100vw;
-    gap: 30px;
+    gap: 40px;
     justify-content: center;
-    
+}
+.sameimg {
+  width:350px;
+  height:300px;
+}
+.ourspecial {
+  color: black;
+  font-weight:500;
+  font-size: 50px;
+}
+h4 {
+  color:black;
+}
+@media screen and (max-width:1000px) {
+  .title {
+    display: flex;
+    width: 100vw;
+  }
+  .ourspecial {
+    font-size: 20px;
+  }
+  .container {
+    align-items: center;
+  }
+  .treecard {
+    width: 100%;
+    display: flex;
+    align-items: center;
+  }
+  .sameimg {
+    width:200px;
+    height:150px;
+  }
+  .treecard {
+    display: flex;
+    width: 60%;
+    gap: 30px;
+    flex-direction: column;
+    justify-content: center;
+}
 }
   .same {
     padding: 1rem;
@@ -26,12 +74,6 @@
     transform: scale(1.05);
     box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
   }
-.title h1 {
-    color: indigo;
-}
-h3 {
-    color: indigo;  
-}
 .indicspecial {
     display: flex;
     justify-content: center;

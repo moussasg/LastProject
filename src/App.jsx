@@ -6,9 +6,9 @@ import Special from "./components/special"
 export default function App() {
   return (
     <>
-  <Home/>
+  <div><Home/></div>
   <About/>
-  <Special/>
+  <div><Special/></div>
     </>
   )
 }

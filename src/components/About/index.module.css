@@ -1,8 +1,35 @@
+
+section.sectionabout {
+position: relative;
+width: 100%;
+margin-top: 10%;
+  background-color: rgba(0, 0, 0, 0.811);
+}
+.titleinsidecadre {
+  color: white;
+  font-size:50px;
+}
+.subtitle {
+  color: white;
+  font-size:25px;
+}
 .About {
     display: flex;
-    width: 100vw;
+    width: 100%;
     justify-content: space-evenly;
     gap: 10px;
+}
+.iconabout {
+  height: 100px;
+  width: 100px;
+}
+
+.textajus {
+  width: 100vw;
+}
+.whyour {
+  font-size: 30px;
+  color: white;
 }
 @keyframes move {
     0% {
@@ -17,24 +44,20 @@
   } 
 .logoabout {
     display: flex;
+    align-items: center;
     position: relative;
     animation: move 2s infinite alternate; /* Utilisation de l'animation "move" pendant 2 secondes, en boucle */
 }
 .skills {
-    width: 100%;
+  width: 100%;
     display: flex;
     align-items: center
-
 }
-    .logoabout:hover {
-        transform: scale(1.05);
-        box-shadow: 0 0 0.5rem rgba(0, 0, 0, 0.2);
-        height: 30vh;
-      }
 .textabout {
     display: flex;
-    width: 40vw;
+    width: 100vw;
     height: 100vh;
+    align-items: center;
 }
 .textabout h1 {
     color: indigo;
@@ -44,8 +67,9 @@ h2 {
   
 }
 .treebutton {
+        overflow: auto; /* ou scroll */
         display: flex;
-        width: 80%;
+        width: 30vw;
         height: 30vh;
         padding: 1rem;
         border: 1px solid #e0e0e0;
@@ -67,4 +91,31 @@ h2 {
     padding: 15px;
     box-shadow: var(--shadow);
     border-radius: var(--radius-12);
+}
+@media screen and (max-width:1000px) {
+  .whyour {
+    font-size: 20px; 
+  }
+  .section.sectionabout {
+width: 100%;
+  }
+  .imgabout { 
+    width: 250px;
+    margin-top: 50px;
+  } 
+  .iconabout {
+    height: 50px;
+  width: 50px;
+  }
+  .About {
+    display: flex;
+    width: 100vw;
+    flex-direction: column-reverse;
+     gap: 20px;
+}
+.treebutton {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+}
 }

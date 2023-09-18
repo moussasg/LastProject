@@ -32,33 +32,36 @@ export default function About() {
 }, [timer, timer2, timer3]);
   return (
     <>
+    <section className={style.sectionabout}>
         <div className={style.About}>
         <div className={style.logoabout}>
         <figure className="hero-banner">
-        <img
+        <img className={style.imgabout}
           src={logoabout}
-          width="500px" 
-          height="400px"
           loading="lazy"
           alt="hero-banner"
-          className="w-100 banner-animation"
         />
       </figure>        
       </div>
                 <div className={style.textabout}>
                     <div className={style.detailabout}>
-                    <div className={style.skills}><img width="100px" height="100px" src={Icondev}></img> <h1>Why Our Agency</h1> <img width="100px" height="100px" src={Iconmark}></img> </div>
+                    <div className={style.skills}>
+                        <img className={style.iconabout} src={Icondev}></img> 
+                        <div className={style.whyour}>Why Our Agency</div> 
+                        <img className={style.iconabout} src={Iconmark}></img>
+                </div>
                 <div className={style.textajus}>
-  <p> 🚀 Feel free to reach out if you're looking for a dedicated full-stack web developer who can bring your ideas to life. I'm here to collaborate on projects, answer any questions, or discuss potential opportunities. Let's create something amazing together</p> <br/>
+  <p style={{color:'white'}}> 🚀 Feel free to reach out if you're looking for a dedicated full-stack web developer who can bring your ideas to life. I'm here to collaborate on projects, answer any questions, or discuss potential opportunities. Let's create something amazing together</p> <br/>
  </div>
-                    <div className={style.treebutton}>
-            <div className={style.staistique}> <h1>+{timer}</h1><p> Satisfied Clients</p></div>
-            <div className={style.staistique}> <h1>+{timer2}</h1><p> Project Lunched</p></div>
-            <div className={style.staistique}> <h1>{timer3}</h1><p> Years Completed</p></div>
+        <div className={style.treebutton}>
+            <div className={style.staistique}> <div className={style.titleinsidecadre}>+{timer}</div><div className={style.subtitle}> Satisfied Clients </div></div>
+            <div className={style.staistique}> <div className={style.titleinsidecadre}>+{timer2}</div><div className={style.subtitle}> Project Lunched</div></div>
+            <div className={style.staistique}> <div className={style.titleinsidecadre}>{timer3}</div><div className={style.subtitle}> Years Completed</div></div>
                     </div>
                 </div>
     </div>
     </div>
+    </section>
     </>
   )
 }

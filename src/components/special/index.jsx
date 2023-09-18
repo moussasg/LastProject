@@ -8,13 +8,13 @@ export default function Special() {
     <div>
             <div className={style.container}>
             <div className={style.title}>
-                <h1>Our Speciallization</h1>
+                <div className={style.ourspecial}> Our Speciallization</div>
             </div>
             <br/>
             <div className={style.treecard}>
-                <div className={style.same}><div><img width="400px" height="300px" src={Strat}></img></div> <div className={style.indicspecial}><h3>🔴 Strategy && Research 🔴</h3></div><div><button></button></div></div>
-                <div className={style.same}><div><img width="400px" height="300px" src={IconWeb}></img></div> <div className={style.indicspecial}><h3>🔴 Web Development 🔴</h3></div><button></button></div>
-                <div className={style.same}><div><img width="400px" height="300px" src={Websol}></img></div> <div className={style.indicspecial}> <h3>🔴 Web Solution 🔴</h3></div><button></button></div>
+                <div className={style.same}><div><img className={style.sameimg} src={Strat}></img></div> <div className={style.indicspecial}><h4>🔴 Strategy && Research 🔴</h4></div><div><button></button></div></div>
+                <div className={style.same}><div><img className={style.sameimg} src={IconWeb}></img></div> <div className={style.indicspecial}><h4>🔴 Web Development 🔴</h4></div><button></button></div>
+                <div className={style.same}><div><img className={style.sameimg} src={Websol}></img></div> <div className={style.indicspecial}> <h4>🔴 Web Solution 🔴</h4></div><button></button></div>
             </div>
             </div>
     </div>

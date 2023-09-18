@@ -1,11 +1,11 @@
 import React from "react"
-import fond from "../../assets/fondecran.png"
+import figmabackfround from "../../assets/fondecran.png"
 import style from "./index.module.css"
 import Trpc from "../../anim"
 export default function Home() {
   return (
     <>
-<header>
+<section className={style.homesection}>
     <div className={style.container}>
     <div className={style.logo}>
     <h2>MyDesign</h2> 
@@ -20,30 +20,24 @@ export default function Home() {
       </div>
     </div>
     {/*Deuxiemme partie */}
-    <div className={style.Home}>
+  <div className={style.Home}>
 <div className={style.prensentation}>
-  <div className={style.trpc}>
   <p className={style.subtitle}>We Are Product Designer From UAE , Dubai</p>
-    <h1><Trpc/></h1>
-  </div>
+    <div className={style.txttrpc}><Trpc/></div>
+    <br/>
+  <br/>
+  <br/>
     <div>
     <button className={style.btn2}><div color="white">Learn More</div></button>
     </div>
     </div>
-    <div className={style.monimg}>  
-    <figure className="hero-banner">
-        <img
-          src={fond}
-          width="500px" 
-          height="400px"
+        <img className={style.monimg}
+          src={figmabackfround}
           loading="lazy"
           alt="hero-banner"
-          className="w-100 banner-animation"
         />
-      </figure>
     </div>
-    </div>
-    </header> 
+    </section> 
        </>
   )
 }
